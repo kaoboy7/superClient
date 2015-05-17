@@ -1,0 +1,25 @@
+<a class="btn btn-primary" href="/#/create/poll"><span class="glyphicon glyphicon-plus"></span> Create Poll</a>
+<br>
+
+<table class="table table-striped">
+    <thead>
+        <th>Polls</th>
+    </thead>
+    <tbody>
+        <tr ng-repeat="poll in polls">
+            <td>
+                <a ng-href="/#/poll/{{poll._id}}">{{poll.question}}</a>
+            </td>
+            <td> 
+                <div class="button-group">
+                <a ng-href="/#/poll/{{poll._id}}/edit" class="btn btn-default">
+                        <span class="glyphicon glyphicon-edit"></span>
+                    </a>
+                    <a ng-href="/#/poll/{{poll._id}}/delete" class="btn btn-danger">
+                        <span class="glyphicon glyphicon-remove-circle"></span>
+                    </a>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
