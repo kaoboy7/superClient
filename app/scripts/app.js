@@ -14,7 +14,10 @@ angular
   ])
   .config(function ($routeProvider, RestangularProvider) {
 
-    RestangularProvider.setBaseUrl('http://localhost:3000');
+    // RestangularProvider.setBaseUrl('http://localhost:3000');
+
+    RestangularProvider.setBaseUrl('https://pacific-journey-4451.herokuapp.com');
+
 
     $routeProvider
       .when('/', {
