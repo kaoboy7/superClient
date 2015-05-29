@@ -4,7 +4,7 @@
 <div class="input-group">
     <div class="checkbox" data-ng-repeat="answer in poll.answers">
         <label>
-            <input type="checkbox" value="{{answer.answer}}" ng-model="answer.status">Test {{answer.answer}} : {{answer._id}} : {{answer.status}}
+            <input type="checkbox" value="{{answer.answer}}" ng-model="answer.status"> {{answer.answer}}
         </label>
     </div>
 </div>
@@ -12,13 +12,6 @@
 <div class="form-group">
 
     <input type="submit" class="btn btn-primary" ng-click="vote()" value="Vote" />
-
     <a class="btn btn-primary" href="/#/poll/{{ poll._id }}/results">Results</a>
     <br>
 </div>
-
-<br>
-TEST
-<br>
-
-{{ formData }}

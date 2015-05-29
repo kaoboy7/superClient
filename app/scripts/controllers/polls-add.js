@@ -23,12 +23,10 @@
         if (i != -1) {
             $scope.poll.answers.splice(i, 1);
         }
-        // $scope.answers.splice(answer.id, 1);
     };
 
     $scope.savePoll = function() {
         if (!!$scope.poll) {
-
             console.log(JSON.stringify($scope.poll));
 
             Polls.post($scope.poll).then(function() {
